@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="icone/css/line-awesome.min.css">
-    <script src="javascript.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="../icone/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+    <title>Cadastro de Produto</title>
 </head>
 <body>
-    <header style="display: block;">
+    <header>
         <div class="toolbar">
           <div class="logo">
             <a href="#">RetroGyn Brecho</a>
@@ -23,11 +24,11 @@
           </div>
           <div class="nav">
             <ul>
-              <li><a href="#">Home</a></li>
+              <li><a href="../catalogo/catalogo.html">Home</a></li>
               <li class="dropdown">
                 <a href="#">Produtos</a>
                 <div class="dropdown-content">
-                  <a href="#">Produto 1</a>
+                  <a href="cadastro.html">Cadastro de Produto</a>
                   <a href="#">Produto 2</a>
                   <a href="#">Produto 3</a>
                 </div>
@@ -37,16 +38,16 @@
             </ul>
           </div>
           <div class="cart">
-            <a href="#"><i class="fa fa-shopping-cart"></i> Carrinho (0)</a>
+            <a href="#"><i class="las la-shopping-cart" style="font-size: 40px;"></i></a>
           </div>
         </div>
       </header>
       
       
       <div class="container">
-      
-        <h1>Cadastro de Produtos</h1>
-        <form>
+
+        <h1 class="animate__animated animate__bounce">Cadastro de Produtos</h1>
+        <form class="formulario">
             <label for="name">Nome do produto:</label>
             <input type="text" id="name" name="name">
         
@@ -62,8 +63,9 @@
             <label for="stock">Estoque:</label>
             <input type="number" id="stock" name="stock" min="0">
         
-            <button type="submit">Cadastrar produto</button>
+            <button class="cadastrar-produto" type="submit">Cadastrar produto</button>
         </form>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

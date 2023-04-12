@@ -4,16 +4,23 @@ body {
     height: 100vh;
   }
   
+
   h1 {
-    font-size: 36px;
-    text-align: center;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    justify-content: center;
+    display: flex;
   }
+    
+  
   
   label {
     display: block;
     font-size: 16px;
     font-weight: bold;
     margin-top: 20px;
+    color: #FFF;
   }
   
   input[type="text"],
@@ -34,8 +41,8 @@ body {
   }
   
   button[type="submit"] {
-    background-color: #008CBA;
-    color: #fff;
+    background-color: #FFF;
+    color: #343030;
     border: none;
     padding: 10px;
     border-radius: 5px;
@@ -45,9 +52,14 @@ body {
   }
   
   button[type="submit"]:hover {
-    background-color: #006B9F;
+    background-color: #004196;
+    color:#FFF
   }
   
+  .formulario button {
+    display: block;
+    margin: auto;
+  }
   /* Adicionar estilo ao formulário */
   form {
     max-width: 500px;
@@ -63,9 +75,18 @@ body {
     margin-bottom: 20px;
   }
 
+  .formulario {
+    background-color:  #0074D9;
+    padding: 30px 50px 60px 50px;
+    border-radius: 5px;
+  }
+
   .container {
-    width: 50%;
+    width: 80%;
     margin: auto;
+    padding-top: 80px;
+    height: 100vh;
+    background-color: #F0F0F0;
   }
   
   /* Adicionar estilo ao campo de erro */
@@ -127,6 +148,8 @@ body {
     padding: 10px 20px;
     border-radius: 0 3px 3px 0;
     cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 5px;
   }
   
   .nav ul {
@@ -151,6 +174,12 @@ body {
   
   .nav ul li:hover > .dropdown-content {
     display: block;
+  }
+
+  ul li a:hover {
+    background-color: #0074D9;
+    color: #FFF;
+    border-radius: 5px;
   }
   
   .dropdown-content {
@@ -220,4 +249,6 @@ body {
       padding: 10px 0;
     }
   }
+
+
   
