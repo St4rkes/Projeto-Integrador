@@ -1,209 +1,269 @@
-/* Definir as fontes */
 body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
-  }
+  font-family: Arial, sans-serif;
+  height: 100vh;
+}
+
+
+h1 {
+  color: #333333;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+  justify-content: center;
+  display: flex;
+}
   
 
-  h1 {
-    color: #333333;
-    font-family: Arial, sans-serif;
-    letter-spacing: 1px;
-    justify-content: center;
-    display: flex;
-  }
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #FFF;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #FFF;
+  color: #343030;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 5px
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color:rgb(255, 255, 255);
+  
+}
+
+.formulario button {
+  display: block;
+  margin: auto;
+}
+/* Adicionar estilo ao formulário */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Adicionar estilo ao cabeçalho do formulário */
+form h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.formulario {
+  background-color:  #c8815f;
+  padding: 30px 50px 60px 50px;
+  border-radius: 5px;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  padding-top: 80px;
+  height: 100vh;
+  background-color: #F0F0F0;
+}
+  
+    /* Adicionar estilo ao campo de erro */
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
     
-  
-  
-  label {
-    display: block;
-    font-size: 16px;
-    font-weight: bold;
-    margin-top: 20px;
-    color: #FFF;
-  }
-  
-  input[type="text"],
-  input[type="number"],
-  textarea,
-  input[type="file"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-  }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  button[type="submit"] {
-    background-color: #FFF;
-    color: #343030;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 18px;
-    margin-top: 20px;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #004196;
-    color:#FFF
-  }
-  
-  .formulario button {
-    display: block;
-    margin: auto;
-  }
-  /* Adicionar estilo ao formulário */
-  form {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-  
-  /* Adicionar estilo ao cabeçalho do formulário */
-  form h2 {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
-  }
+    /* Adicionar estilo ao campo de sucesso */
+    .success {
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    
+    header {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+    
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+      padding: 0 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .logo a {
+      font-size: 28px;
+      font-weight: bold;
+      color: #000305;
+      text-decoration: none;
+    }
+    
+    .search form {
+      display: flex;
+    }
+    
+    .search input[type="text"] {
+      border: none;
+      border-radius: 3px 0 0 3px;
+      padding: 10px;
+      width: 300px;
+    }
+    
+    .search button {
+      border: none;
+      background-color: #c8815f;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 0 3px 3px 0;
+      cursor: pointer;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      margin-left: 5px;
+    }
+    
+    .nav ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .nav ul li {
+      position: relative;
+      margin: 0 10px;
+    }
+    
+    .nav ul li a {
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 20px 10px;
+      display: block;
+    }
+    
+    .nav ul li:hover > .dropdown-content {
+      display: block;
+    }
 
-  .formulario {
-    background-color:  #0074D9;
-    padding: 30px 50px 60px 50px;
-    border-radius: 5px;
-  }
+    ul li a:hover { 
+      background-color: #000305;
+      color: #FFF;
+      border-radius: 5px;
+    }
+    
+    .dropdown-content {
+      position: absolute;
+      background-color: #fff;
+      display: none;
+      min-width: 200px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .cart a {
+      display: flex;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 20px;
+      cursor: pointer;
+    }
+    
+    .cart i {
+      font-size: 20px;
+      margin-right: 5px;
+    }
 
-  .container {
-    width: 80%;
-    margin: auto;
-    padding-top: 80px;
-    height: 100vh;
-    background-color: #F0F0F0;
-  }
-  
-  /* Adicionar estilo ao campo de erro */
-  .error {
-    color: red;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  /* Adicionar estilo ao campo de sucesso */
-  .success {
-    color: green;
-    font-size: 14px;
-    margin-top: 5px;
-  }
-  
-  header {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-  }
-  
-  .toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 70px;
-    padding: 0 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo a {
-    font-size: 28px;
-    font-weight: bold;
-    color: #0074D9;
-    text-decoration: none;
-  }
-  
-  .search form {
-    display: flex;
-  }
-  
-  .search input[type="text"] {
-    border: none;
-    border-radius: 3px 0 0 3px;
-    padding: 10px;
-    width: 300px;
-  }
-  
-  .search button {
-    border: none;
-    background-color: #0074D9;
-    color: #fff;
-    padding: 10px 20px;
-    border-radius: 0 3px 3px 0;
-    cursor: pointer;
-    margin-bottom: 10px;
-    margin-top: 5px;
-  }
-  
-  .nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .nav ul li {
-    position: relative;
-    margin: 0 10px;
-  }
-  
-  .nav ul li a {
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 20px 10px;
-    display: block;
-  }
-  
-  .nav ul li:hover > .dropdown-content {
-    display: block;
-  }
+    #Contato{
+        display: flex;
+        gap: 5rem;
+        justify-content: space-around;
+        background-color: #111;
+        padding: 8rem;
+        margin-top: 5rem;
+        display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    }
 
-  ul li a:hover {
-    background-color: #0074D9;
-    color: #FFF;
-    border-radius: 5px;
-  }
-  
-  .dropdown-content {
-    position: absolute;
-    background-color: #fff;
-    display: none;
-    min-width: 200px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .cart a {
-    display: flex;
-    align-items: center;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    padding: 20px;
-    cursor: pointer;
-  }
-  
-  .cart i {
-    font-size: 20px;
-    margin-right: 5px;
-  }
+    .meio-contato h3{
+        color: #fff;
+        font-size: 23px;
+        margin-bottom: 1.6rem;
+    }
+
+    .meio-contato h5{
+        font-size: 15px;
+        font-weight: 600;
+        color: #555;
+    }
+
+    .meio-contato li{
+        margin-bottom: 15px;
+    }
+
+    .meio-contato li a{
+        display: block;
+        color: #555;
+        font-weight: 600;
+        transition: all .35s ease;
+    }
+
+    .meio-contato2 > a{
+      padding: 3px;
+      
+    }
+
+    .meio-contato2 > li{
+      color: #fff;
+      margin: 15px 0px;
+      
+    }
+
+    .meio-contato2 h3{
+      color: #fff;
+      font-size: 23px;
+      margin-bottom: 1.6rem;
+    }
+
+    .last-text{
+        text-align: center;
+        background-color: #555;
+        color: #fff;
+    }
   
   @media (max-width: 768px) {
     .toolbar {
