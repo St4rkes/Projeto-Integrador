@@ -272,6 +272,11 @@ header{
     
 }
 
+.meio-texto p{
+  padding-top: 64px;
+  
+}
+
 .Meio button{
     background-color: #c8815f;
     padding: 1rem 3rem 1rem 3rem;
@@ -472,6 +477,71 @@ section h1{
 margin: 10px 10px;
 
 }
+
+.slider{
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+}
+.slide img {
+  width: 800px;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -10px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #c8815f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: #c8815f;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+  
+}
+
+
+#radio2:checked ~ .first{
+  margin-left: -25%;
+  
+}
+
+
+
+
+
   @media (max-width: 768px) {
     .toolbar {
       flex-wrap: wrap;
