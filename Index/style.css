@@ -341,6 +341,7 @@ section h1{
 
 .text-cta{
     padding-left: 5rem;
+    margin-top: 80px;
 }
 
 .text-cta h6{
@@ -367,6 +368,7 @@ section h1{
    font-size: 1rem;
    cursor: pointer;
    transition: 0.3s;
+   margin-top: 80px;
 }
 
 .text-cta a:hover{
@@ -501,6 +503,7 @@ margin: 10px 10px;
 }
 .slide img {
   width: 800px;
+  border: solid 2px #c8815f;
 }
 
 .navigation-manual {
@@ -535,6 +538,16 @@ margin: 10px 10px;
 
 #radio2:checked ~ .first{
   margin-left: -25%;
+  
+}
+
+#radio3:checked ~ .first{
+  margin-left: -50%;
+  
+}
+
+#radio4:checked ~ .first{
+  margin-left: -50%;
   
 }
 
