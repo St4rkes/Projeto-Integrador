@@ -288,19 +288,21 @@ header{
 
 .Meio button{
     background-color: #c8815f;
-    padding: 1rem 3rem 1rem 3rem;
+    padding: 1rem 3rem ;
     border: none;
     border-radius: 5px;
     color: #fff;
-   font-size: 1rem;
-   cursor: pointer;
-   transition: 0.3s;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+
+   
 
 }
 
 .Meio button:hover{
       background-color: #111;
-      transform: scaleY(1.2);
+      transform: scaleX(1.1) scaleY(1.1);
 }
 
 section{
