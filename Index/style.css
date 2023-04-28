@@ -399,7 +399,7 @@ section h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2rem;
+    gap: 2.5rem;
     align-items: center;
     text-align: center;
     margin-top: 3rem;
@@ -407,14 +407,14 @@ section h1{
 }
 
 .Container-roupas img:hover{
-    transform: scale(0.9) translateY(-5px);
+  transform: scale(0.9) translateY(-5px);
     cursor: pointer;
     transition: 0.3s;
 
 }
 
 .roupa img{
-    width: 250px;
+    width: 290px;
     height: auto;
 }
 
