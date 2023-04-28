@@ -547,7 +547,7 @@ margin: 10px 10px;
 }
 
 #radio4:checked ~ .first{
-  margin-left: -50%;
+  margin-left: -75%;
   
 }
 
