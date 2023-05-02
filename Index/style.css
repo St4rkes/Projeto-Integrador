@@ -543,7 +543,7 @@ margin: 10px 10px;
 }
 
 .slider{
-  width: 1400px;
+  width: 1200px;
   height: 420px;
   overflow: hidden;
   text-align: left;
@@ -574,7 +574,7 @@ margin: 10px 10px;
 
 .navigation-manual {
   position: absolute;
-  width: 1300px;
+  width: 1200px;
   margin-top: -10px;
   display: flex;
   justify-content: center;
@@ -582,7 +582,7 @@ margin: 10px 10px;
 
 .navigation-auto{
   position: absolute;
-  width: 1300px;
+  width: 1200px;
   margin-top: 26.9rem;
   display: flex;
   justify-content: center;
