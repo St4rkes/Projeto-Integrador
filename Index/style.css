@@ -263,8 +263,8 @@ header{
 }
 
 .Meio{
-    padding: 7rem 0 0 8.5rem;
-    line-height: 4rem;
+    padding: 7rem 2rem 2rem 1.8rem;
+    
 }
 
 .Meio h1{
@@ -295,9 +295,6 @@ header{
     font-size: 1rem;
     cursor: pointer;
     transition: 0.3s;
-
-   
-
 }
 
 .Meio button:hover{
@@ -489,6 +486,51 @@ section h1{
   margin-bottom: 1.6rem;
 }
 
+
+.Meio-Doacao{
+  padding: 7rem 2rem 2rem 1.8rem;
+  
+}
+
+.meio-Doacao h4{
+font-size: 4rem;
+
+}
+
+.Meio-Doacao h3{
+font: bolder;
+font-size: 2rem;
+margin-bottom: 2rem;
+}
+
+.Meio-Doacao p{
+padding-top: 64px;
+
+}
+
+.Meio-Doacao img {
+  width: 95vw;
+  height: 65vh;
+  border: solid 2px #c8815f;
+}
+
+.Meio-Doacao button{
+  background-color: #c8815f;
+  padding: 1rem 3rem ;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.Meio-Doacao button:hover{
+    background-color: #111;
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+
 .last-text{
     text-align: center;
     background-color: #555;
@@ -501,17 +543,15 @@ margin: 10px 10px;
 }
 
 .slider{
-  
-  width: 1100px;
+  width: 1400px;
   height: 420px;
   overflow: hidden;
-  
- 
   text-align: left;
+  
 }
 
 .slides {
-  width: 500%;
+  width: 400%;
   height: 420px;
   display: flex;
 }
@@ -525,20 +565,30 @@ margin: 10px 10px;
   position: relative;
 }
 .slide img {
-  margin: 0 auto;
-  width: 1100px;
-  border: solid 2px #c8815f;
+  padding: 0rem 6.8rem 0rem 0rem;
+  width: 1400px;
+  height: auto;
+
 }
+
 
 .navigation-manual {
   position: absolute;
-  width: 1100px;
+  width: 1300px;
   margin-top: -10px;
   display: flex;
   justify-content: center;
 }
 
-.manual-btn {
+.navigation-auto{
+  position: absolute;
+  width: 1300px;
+  margin-top: 26.9rem;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn, .navigation-auto div {
   border: 2px solid #c8815f;
   padding: 5px;
   border-radius: 10px;
@@ -550,9 +600,14 @@ margin: 10px 10px;
   margin-right: 40px;
 }
 
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
 .manual-btn:hover{
   background-color: #c8815f;
 }
+
 
 #radio1:checked ~ .first{
   margin-left: 0;
@@ -581,6 +636,22 @@ margin: 10px 10px;
 
 #radio6:checked ~ .first{
   margin-left: -25%;
+}
+
+
+#radio1:checked ~ .navigation-auto .auto-bnt1 {
+  background-color: #c8815f;
+}
+
+#radio2:checked ~ .navigation-auto .auto-bnt2 {
+  background-color: #c8815f;
+}
+
+#radio3:checked ~ .navigation-auto .auto-bnt3 {
+  background-color: #c8815f;
+}
+#radio4:checked ~ .navigation-auto .auto-bnt4 {
+  background-color: #c8815f;
 }
 
 
